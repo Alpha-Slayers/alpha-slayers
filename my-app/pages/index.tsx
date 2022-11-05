@@ -12,46 +12,22 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <div className={styles.profile}>
+        <Image src="/greendrag.svg" alt="profile pic" width={250} height={250} />
+        </div>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Edmond Doan
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
+          Hello, I'm Edmond. a Software Engineer interested in Web3, Metaverse, and Cryptocurrency related subjects (MEV, DeFi, NFTs, Layer2).
+          <h2 className={styles.header2}>Links</h2>
+          <h3><a href="https://www.coindesk.com/business/2022/05/11/animal-crossing-meets-minecraft-branch-raises-125m-for-play-to-earn-project/">Branch Funding Announcement</a></h3>
         </p>
+        
+     
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
       </main>
 
       <footer className={styles.footer}>
