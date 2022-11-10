@@ -3,7 +3,6 @@ import { NextUIProvider } from '@nextui-org/react'
 import styles from '../styles/Home.module.css'
 import { Navbar, Dropdown, Button, Link, Text } from "@nextui-org/react";
 import { Layout } from "../pages/Navbar/Layout";
-import { AcmeLogo } from "../pages/Navbar/AcmeLogo";
 import { icons } from "../pages/Navbar/Icons";
 
 export default function Home() {
@@ -12,7 +11,8 @@ export default function Home() {
     <Layout>
       <Navbar isBordered variant="sticky">
         <Navbar.Brand>
-          <AcmeLogo />
+        <img src="../dragonlogo.svg" alt="An SVG of an eye" />
+
           <Text b color="inherit" hideIn="xs">
             ALPHA SLAYERS
           </Text>
@@ -23,6 +23,10 @@ export default function Home() {
           hideIn="xs"
           variant="underline"
         >
+          <Navbar.Link isActive href="#">
+            Projects
+          </Navbar.Link>
+          <Navbar.Link href="#">Asset Rankings</Navbar.Link>
           <Dropdown isBordered>
             <Navbar.Item>
               <Dropdown.Button
@@ -86,15 +90,9 @@ export default function Home() {
 
             </Dropdown.Menu>
           </Dropdown>
-          <Navbar.Link isActive href="#">
-            Projects
-          </Navbar.Link>
-          <Navbar.Link href="#">Asset Rankings</Navbar.Link>
         </Navbar.Content>
+        
         <Navbar.Content>
-          <Navbar.Link color="inherit" href="#">
-            Login
-          </Navbar.Link>
           <Navbar.Item>
             <Button auto flat as={Link} href="#">
               Connect Wallet
